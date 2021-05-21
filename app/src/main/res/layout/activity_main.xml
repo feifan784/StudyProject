@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDataBinding"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#7A51B5B9"
+                android:gravity="center"
+                android:text="DataBinding"
+                android:textColor="@color/white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvRx"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#7A51B5B9"
+                android:gravity="center"
+                android:text="Rxjava"
+                android:textColor="@color/white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvRam"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#7A51B5B9"
+                android:gravity="center"
+                android:text="Ram"
+                android:textColor="@color/white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvDrawer"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#7A51B5B9"
+                android:gravity="center"
+                android:text="Drawer"
+                android:textColor="@color/white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvPicture"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#7A51B5B9"
+                android:gravity="center"
+                android:text="Picture Tiny"
+                android:textColor="@color/white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvBig"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#7A51B5B9"
+                android:gravity="center"
+                android:text="Big Img"
+                android:textColor="@color/white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvDrag"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#7A51B5B9"
+                android:gravity="center"
+                android:text="Drag Img"
+                android:textColor="@color/white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvAidl"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#7A51B5B9"
+                android:gravity="center"
+                android:text="AIDL"
+                android:textColor="@color/white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvRcvDrag"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#7A51B5B9"
+                android:gravity="center"
+                android:text="RecyclerView  Drag"
+                android:textColor="@color/white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvDispatch"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#7A51B5B9"
+                android:gravity="center"
+                android:text="Dispatch"
+                android:textColor="@color/white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvGuide"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#7A51B5B9"
+                android:gravity="center"
+                android:text="Guide"
+                android:textColor="@color/white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

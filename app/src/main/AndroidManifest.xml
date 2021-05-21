@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xufeifan.application">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".guide.GuideActivity2"></activity>
+        <activity android:name=".guide.GuideActivity" />
+        <activity android:name=".dispatch.DispatchActivity" />
+        <activity android:name=".drag.DragActivity" />
+        <activity android:name=".encryption.EncryptionActivity" />
+        <activity android:name=".process.RemoteActivity" />
+        <activity android:name=".picture.DragActivity" />
+        <activity android:name=".picture.BigImgActivity" />
+        <activity android:name=".picture.PictureActivity" />
+        <activity android:name=".drawer.DrawerActivity" />
+        <activity android:name=".ram.RamActivity" />
+        <activity android:name=".rx.RxjavaActivity" />
+        <activity android:name=".databinding.DataBindingActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".process.RemoteService"
+            android:process=":remote" />
+    </application>
+
+</manifest>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="login"
+            type="com.xufeifan.application.databinding.LoginBean" />
+
+        <variable
+            name="presenter"
+            type="com.xufeifan.application.databinding.DataBindingActivity.Presenter" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".databinding.DataBindingActivity">
+
+        <EditText
+            android:id="@+id/et_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="账号"
+            android:text="@={login.account}" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="密码"
+            android:text="@={login.password}" />
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@{login.account+'|'+login.password}" />
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:onClick="@{presenter.onSubmit}"
+            android:text="提交"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</layout>
