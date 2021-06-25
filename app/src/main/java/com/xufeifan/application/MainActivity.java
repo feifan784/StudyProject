@@ -12,11 +12,11 @@ import com.xufeifan.application.dispatch.DispatchActivity;
 import com.xufeifan.application.drag.Channel;
 import com.xufeifan.application.drawer.DrawerActivity;
 import com.xufeifan.application.guide.GuideActivity;
-import com.xufeifan.application.guide.GuideActivity2;
 import com.xufeifan.application.picture.BigImgActivity;
 import com.xufeifan.application.picture.DragActivity;
 import com.xufeifan.application.picture.PictureActivity;
 import com.xufeifan.application.process.RemoteActivity;
+import com.xufeifan.application.program.DynamicProgramActivity;
 import com.xufeifan.application.ram.RamActivity;
 import com.xufeifan.application.rx.RxjavaActivity;
 
@@ -27,7 +27,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private TextView tvDataBinding;
-    private TextView tvRx, tvRam, tvDrawer, tvPicture, tvBig, tvDrag, tvAidl, tvRcvDrag, tvDispatch, tvGuide;
+    private TextView tvRx, tvRam, tvDrawer, tvPicture, tvBig, tvDrag, tvAidl, tvRcvDrag, tvDispatch, tvGuide,tvTwo;
     private List<Channel> mSelectData = new ArrayList<>();
     private List<Channel> mUnSelectData = new ArrayList<>();
 
@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         tvRcvDrag = findViewById(R.id.tvRcvDrag);
         tvDispatch = findViewById(R.id.tvDispatch);
         tvGuide = findViewById(R.id.tvGuide);
+        tvTwo = findViewById(R.id.tvTwo);
 
         mSelectData.clear();
         mUnSelectData.clear();
@@ -158,6 +159,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, GuideActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        tvTwo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, DynamicProgramActivity.class);
                 startActivity(intent);
             }
         });
